@@ -14,11 +14,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class WordSeachQueryDTO {
+public class WordSearchQuery {
 
     @JsonProperty("searchword")
     private String searchWord;
-    private long rows;
+    private int rows;
     private String word;
 
 }

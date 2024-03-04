@@ -1,6 +1,8 @@
 package co.edu.lasalle.wordsearch.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,6 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@JsonInclude(Include.NON_NULL)
 public class WordSearchQueryResponse {
 
     @JsonProperty("wordsearch")
@@ -22,7 +25,7 @@ public class WordSearchQueryResponse {
     private String word;
     private boolean contains;
     @JsonProperty("start_row")
-    private long startRow;
+    private Integer startRow;
     @JsonProperty("start_col")
-    private long startCol;
+    private Integer startCol;
 }
