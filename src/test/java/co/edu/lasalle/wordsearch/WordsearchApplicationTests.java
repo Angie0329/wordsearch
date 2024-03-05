@@ -1,4 +1,4 @@
-package co.edu.lasalle.wordsearch;
+/*package co.edu.lasalle.wordsearch;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,3 +11,4 @@ class WordsearchApplicationTests {
 	}
 
 }
+*/

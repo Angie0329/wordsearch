@@ -17,7 +17,7 @@ $ ./gradlew bootRun
 
 #### Windows
 ```cmd
-$ .\gradlew.cmd bootRun
+$ .\gradlew.bat bootRun
 ```
 
 Una vez la aplicacion este totalmente arriba, se puede usar sin ningun problema
@@ -30,7 +30,7 @@ Para realizar una busqueda de una palabra de manera horizontal y/o vertical,
 se debe hacer uso del endpoint `/search-horandvert` de la siguiente manera:
 
 ```txt
-POST http://localhost:8080/api/v1/searchword/search-horandvert
+POST http://localhost:8080/api/v1/wordsearch/search-horandvert
 
 {
     "searchword": "abcdefghijklmnopqrstuvwxyzabcdef",
@@ -67,7 +67,7 @@ Para realizar una busqueda de una palabra en en diagonal se debe hacer uso del
 endpoint `/search` de la siguiente manera:
 
 ```txt
-POST http://localhost:8080/api/v1/searchword/search
+POST http://localhost:8080/api/v1/wordsearch/search
 
 {
     "searchword": "aaufghthoxbaghthoecxbhthoeufgcth",
